@@ -7,7 +7,7 @@ $header-color: rgb(85, 84, 84);
   background-image: linear-gradient(
     rgb(128, 204, 255, 0.8),
     rgba(176, 238, 176, 0.8),
-    rgba(248, 248, 145, 0.8)
+    rgba(248, 248, 145, 0.8) 80%
   );
   height: 13vh;
 }
@@ -15,7 +15,7 @@ $header-color: rgb(85, 84, 84);
   background-image: linear-gradient(
     rgba(248, 248, 145, 0.8),
     rgba(176, 238, 176, 0.8),
-    rgb(128, 204, 255, 0.8)
+    rgb(128, 204, 255, 0.8) 80%
   );
   height: 13vh;
 }
@@ -27,16 +27,7 @@ $header-color: rgb(85, 84, 84);
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: $bg-color;
-  background-image: linear-gradient(
-    rgba(248, 248, 145, 0.8),
-    rgba(212, 243, 160, 0.8),
-    rgba(176, 238, 176, 0.8),
-    rgba(212, 243, 160, 0.8),
-    rgba(248, 248, 145, 0.8)
-  );
-}
+
 /*navbar*/
 .navbar {
   background-color: $bg-color; /*backup color*/
@@ -59,43 +50,55 @@ body {
     color: $overlay-color;
   }
 }
+body {
+  background-image: linear-gradient(
+    rgba(248, 248, 145, 0.8),
+    rgba(248, 248, 145, 0.8),
+    rgba(212, 243, 160, 0.8),
+    rgba(176, 238, 176, 0.8),
+    rgba(212, 243, 160, 0.8),
+    rgba(248, 248, 145, 0.8),
+    rgba(248, 248, 145, 0.8)
+  );
+}
 
 /*main sec*/
-.headline {
+h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
-  text-decoration: underline;
+  font-size: 4vw;
+  padding: 2%;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
-  gap: 10%;
-  .image1 {
-    height: 500px;
-    width: 650px;
+  gap: 5%;
+  padding-bottom: 2%;
+  .carlimage {
+    height: 42vw;
+    width: 50vw;
   }
-  .ingredients {
-    font-size: 25px;
-    li {
-      padding: 1%;
-    }
+}
+.description {
+  width: 30vw;
+  padding: 4% 0;
+  font-size: 1.8vw;
+  text-align: center;
+  line-height: 150%;
+}
+
+.container2 {
+  padding: 8%;
+  p {
+    font-size: 3vh;
+    line-height: 150%;
   }
 }
 
-.preperation {
-  padding: 5%;
-  font-size: 20px;
-  li {
-    padding: 1% 0;
-  }
-}
-
-/*footer with links*/
+/*footer with links */
 footer {
   background-color: $bg-color; /*backup color*/
   @include background-gradient2(1);
@@ -124,45 +127,8 @@ footer {
   align-items: center;
 }
 
-/* responsiveness part */
-@media only screen and (min-width: 375px) and (max-width: 767px) {
-  .container {
-    .image1 {
-      height: 137px;
-      width: 178px;
-    }
-    .ingredients {
-      font-size: 10px;
-    }
-  }
-  .preperation {
-    font-size: 12px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    .image1 {
-      height: 340px;
-      width: 408px;
-    }
-    .ingredients {
-      font-size: 16px;
-    }
-  }
-  .preperation {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .container {
-    .image1 {
-      height: 425px;
-      width: 510px;
-    }
-    .ingredients {
-      font-size: 20px;
-    }
+@media screen and (max-width: 768px) {
+  .container2 p {
+    font-size: 18px;
   }
 }

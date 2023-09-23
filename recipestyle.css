@@ -13,6 +13,7 @@ body {
   background-image: linear-gradient(rgba(248, 248, 145, 0.8), rgba(212, 243, 160, 0.8), rgba(176, 238, 176, 0.8), rgba(212, 243, 160, 0.8), rgba(248, 248, 145, 0.8));
 }
 
+/*navbar*/
 .navbar {
   background-color: rgba(248, 248, 145, 0.8); /*backup color*/
   background-image: linear-gradient(rgba(128, 204, 255, 0.8), rgba(176, 238, 176, 0.8), rgba(248, 248, 145, 0.8));
@@ -34,6 +35,15 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: rgb(43, 65, 43);
+}
+
+/*main sec*/
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  text-decoration: underline;
 }
 
 .container {
@@ -62,6 +72,7 @@ body {
   padding: 1% 0;
 }
 
+/*footer with links*/
 footer {
   background-color: rgba(248, 248, 145, 0.8); /*backup color*/
   background-image: linear-gradient(rgba(248, 248, 145, 0.8), rgba(176, 238, 176, 0.8), rgba(128, 204, 255, 0.8));

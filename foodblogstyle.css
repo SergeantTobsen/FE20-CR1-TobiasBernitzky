@@ -12,11 +12,7 @@ body .container {
   background-image: linear-gradient(rgba(248, 248, 145, 0.8), rgba(212, 243, 160, 0.8), rgba(176, 238, 176, 0.8), rgba(212, 243, 160, 0.8), rgba(248, 248, 145, 0.8));
 }
 
-.hr {
-  background-color: rgb(85, 84, 84);
-  height: 3px;
-}
-
+/*navigation bar*/
 .navbar {
   background-color: rgba(248, 248, 145, 0.8); /*backup color*/
   background-image: linear-gradient(rgba(128, 204, 255, 0.8), rgba(176, 238, 176, 0.8), rgba(248, 248, 145, 0.8));
@@ -42,6 +38,12 @@ body .container {
   font-size: 24px;
   font-weight: 700;
   color: rgb(43, 65, 43);
+}
+
+/*horizontal line */
+.hr {
+  background-color: rgb(85, 84, 84);
+  height: 3px;
 }
 
 /*header food banner*/
@@ -139,7 +141,7 @@ footer a {
   align-items: center;
 }
 
-/* responsiveness part */
+/* responsiveness part down to 375px */
 @media screen and (max-width: 767px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
