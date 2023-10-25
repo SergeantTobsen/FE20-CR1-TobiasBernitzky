@@ -90,7 +90,8 @@ body .container {
 /*gridcontainer with images */
 .container {
   width: 100%;
-  padding: 1% 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
